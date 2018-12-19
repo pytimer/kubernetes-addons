@@ -5,4 +5,4 @@ This repository lists some of the available add-ons and links to their respectiv
 
 # Logging
 
-- [Elasticsearch](./elasticsearch/README.md) provides deploy Elasticsearch cluster.
+- [Elasticsearch](./elasticsearch) provides deploy Elasticsearch cluster.
