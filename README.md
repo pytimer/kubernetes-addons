@@ -6,3 +6,7 @@ This repository lists some of the available add-ons and links to their respectiv
 # Logging
 
 - [Elasticsearch](./elasticsearch) provides deploy Elasticsearch cluster.
+
+# Storage
+
+- [Minio](./minio) is an object storage server.
