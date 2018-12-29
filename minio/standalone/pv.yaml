@@ -19,4 +19,4 @@ spec:
       nodeSelectorTerms:
       - matchExpressions:
         - key: node-role.kubernetes.io/master
-          operator: DoesNotExists
+          operator: DoesNotExist
