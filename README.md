@@ -10,3 +10,7 @@ This repository lists some of the available add-ons and links to their respectiv
 # Storage
 
 - [Minio](./minio) is an object storage server.
+
+# Apps
+
+- [Helm](./helm) is a tool for managing Kubernetes charts. Charts are packages of pre-configured Kubernetes resources.
