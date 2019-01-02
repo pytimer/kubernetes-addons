@@ -139,3 +139,12 @@ NAME            CHART VERSION   APP VERSION     DESCRIPTION
 stable/alpine   0.1.0           3.3             Deploy a basic Alpine Linux pod
 ```
 
+- install alpine
+
+If the tiller not installed on the Kubernetes cluster, you should install it. You can install Tiller follow this [Securing the Helm Tiller](../tiller/README.md).
+
+If the Tiller installed, you can run below command to testing your chart.
+
+```sh
+$ helm install test/alpine
+```
