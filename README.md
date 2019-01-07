@@ -1,16 +1,19 @@
-Kubernetes Addons
--------------------------------------
+# Kubernetes Addons
 
 This repository lists some of the available add-ons and links to their respective installation instructions.
 
-# Logging
+## Logging
 
 - [Elasticsearch](./elasticsearch) provides deploy Elasticsearch cluster.
 
-# Storage
+## Storage
 
 - [Minio](./minio) is an object storage server.
 
-# Apps
+## Apps
 
 - [Helm](./helm) is a tool for managing Kubernetes charts. Charts are packages of pre-configured Kubernetes resources.
+
+## Monitor
+
+- [Metrics-server](./metrics-server) is a cluster-wide aggregator of resource usage data.
