@@ -3,7 +3,9 @@
 
 ## Deploy
 
-You can follow [offical document](https://github.com/kubernetes-incubator/metrics-server#deployment) to deploy `metrics-server` on the Kubernetes cluster. But some parameters need to update.
+You can follow [offical document](https://github.com/kubernetes-incubator/metrics-server#deployment) to deploy `metrics-server` on the Kubernetes cluster. But some parameters need to update. 
+
+If you want to understand why need to update, you can see this [issue](https://github.com/kubernetes-incubator/metrics-server/issues/131).
 
 ### Download
 
