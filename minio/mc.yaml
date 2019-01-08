@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minio-client-deployment
+  namespace: storage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minio-client
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: minio-client
+        version: 2018-12-19T22-58-03Z
+    spec:
+      containers:
+      - name: mc
+        image: minio/mc:RELEASE.2018-12-19T22-58-03Z
+        args:
+        - watch
+        - "/usr/share"
+        env:
+        - name: MC_HOSTS_kminio
+          value: "http://kubernetescloud:kubernetescloudstorage@minio-service:9000"

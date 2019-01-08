@@ -11,6 +11,14 @@ If you want to deploy minio standalone server, you can copy standalone directory
 
 Minio default namespace is `storage`, if you want to change namespace, you should update yaml `namespace` field manually.
 
+If you want to custom your own access key and secret key, you should change [deployment.yaml](./standalone/deployment.yaml) envrionments.
+
+## Client
+
+The minio client deployment is experimental.
+
+`kubectl apply -f mc.yaml`
+
 
 ## Reference
 
