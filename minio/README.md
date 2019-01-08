@@ -19,6 +19,11 @@ The minio client deployment is experimental.
 
 `kubectl apply -f mc.yaml`
 
+#### Usage
+
+mc Dockerfile `ENTRYPOINT` is `mc`, so you can use `mc` command like below:
+
+`kubectl exec -it -n storage minio-client-deployment-866df9555b-kfxc4 mc -- --help`
 
 ## Reference
 
