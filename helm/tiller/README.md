@@ -66,3 +66,16 @@ $ kubectl logs -n kube-system tiller-deploy-87986794-jzsqm
 [main] 2019/01/02 13:54:36 Storage driver is ConfigMap
 [main] 2019/01/02 13:54:36 Max history per release is 0
 ```
+
+## FAQ
+
+### `helm reset` can not delete tiller completely.
+
+Now `helm reset` have a question that can not delete tiller completely, so we should run two commands order to delete completely after reset.
+
+```sh
+$ kubectl delete deployment tiller-deploy --namespace=kube-system
+$ kubectl delete service tiller-deploy --namespace=kube-system
+```
+
+You can read this issue to know more information [helm reset --force reports OK but tiller is not deleted ](https://github.com/helm/helm/issues/4825).
